@@ -29,22 +29,16 @@
         <header class="text-center mb-12">
             <div class="w-28 h-28 md:w-32 md:h-32 mx-auto mb-4">
                 <!-- Placeholder for your photo -->
-                <img src="https://via.placeholder.com/128" alt="Your Name" class="rounded-full object-cover w-full h-full shadow-md border-4 border-white">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQGKHJm-3sUA0w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1681528947657?e=1767830400&v=beta&t=W03yB1J0RVwbEBfD0rHmLWeiy_aB13Bv3O9p9fT_DVI" alt="Your Name" class="rounded-full object-cover w-full h-full shadow-md border-4 border-white">
             </div>
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Dr. Your Name</h1>
-            <p class="text-xl md:text-2xl text-blue-600 mt-2">Assistant Professor of [Your Department]</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Vincent Chung</h1>
+            <p class="text-xl md:text-2xl text-blue-600 mt-2">Doctoral Researcher</p>
             <p class="mt-4 max-w-3xl mx-auto text-gray-600">
                 Welcome to my academic portfolio. Here you will find my curriculum vitae, research presentations, and publications. My work focuses on [briefly describe your research area].
             </p>
             <!-- Social & Academic Links -->
             <div class="mt-6 flex justify-center gap-6">
-                <a href="#" title="Google Scholar" class="text-gray-500 hover:text-blue-600 transition-colors duration-300">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769L0 9.5L12 0l12 9.5l-5.242 4.269C17.548 11.249 14.978 9 12 9s-5.548 2.249-6.758 4.769zM12 10c-3.313 0-6 2.686-6 6s2.687 6 6 6s6-2.686 6-6s-2.687-6-6-6z"/></svg>
-                </a>
-                <a href="#" title="ORCID" class="text-gray-500 hover:text-blue-600 transition-colors duration-300">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378h3.93v10.643h-3.93V4.378zm1.965 12.637c-1.086 0-1.965-.878-1.965-1.965s.878-1.965 1.965-1.965 1.965.878 1.965 1.965-.878 1.965-1.965 1.965zm5.952-8.257V4.378h3.93v15.244h-3.93v-7.142c0-1.932-.422-3.387-2.731-3.387-2.31 0-2.289 1.845-2.289 3.298v7.231h-3.93V9.018c0-2.836 1.681-4.753 4.881-4.753 2.155 0 3.364.819 3.992 2.485l-.023.023z"/></svg>
-                </a>
-                <a href="#" title="LinkedIn" class="text-gray-500 hover:text-blue-600 transition-colors duration-300">
+                <a href="https://www.linkedin.com/in/vincent-chung-1b9a99bb" target="_blank" title="LinkedIn" class="text-gray-500 hover:text-blue-600 transition-colors duration-300">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </a>
             </div>
@@ -57,11 +51,14 @@
                     <button class="tab-btn whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg text-blue-600 border-blue-500" data-target="cv">
                         Curriculum Vitae
                     </button>
+                     <button class="tab-btn whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg text-gray-500 border-transparent hover:text-gray-700 hover:border-gray-300" data-target="publications">
+                        Publications
+                    </button>
                     <button class="tab-btn whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg text-gray-500 border-transparent hover:text-gray-700 hover:border-gray-300" data-target="presentations">
                         Presentations
                     </button>
-                    <button class="tab-btn whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg text-gray-500 border-transparent hover:text-gray-700 hover:border-gray-300" data-target="publications">
-                        Publications
+                    <button class="tab-btn whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg text-gray-500 border-transparent hover:text-gray-700 hover:border-gray-300" data-target="teaching">
+                        Teaching
                     </button>
                 </nav>
             </div>
@@ -107,7 +104,6 @@
                             </div>
                         </div>
                     </section>
-
                     <!-- Education Section -->
                     <section>
                         <h2 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-blue-500 pl-4">Education</h2>
@@ -121,7 +117,6 @@
                                 </div>
                             </div>
                     </section>
-
                     <!-- Skills & Expertise Section -->
                     <section>
                         <h2 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-blue-500 pl-4">Skills & Expertise</h2>
@@ -134,6 +129,32 @@
                             <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-1 rounded-full">R</span>
                         </div>
                     </section>
+                </div>
+            </div>
+
+            <!-- Publications Content -->
+            <div id="publications" class="tab-content hidden">
+                <div class="space-y-8">
+                    <!-- Publication 1 -->
+                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-900">Title of the Groundbreaking Publication</h3>
+                        <p class="text-gray-600 mt-1"><strong>Your Name</strong>, Co-author Name, Another Co-author</p>
+                        <p class="text-blue-600 mt-2 font-medium">Journal of Fictional Science, Vol. 42, 2023</p>
+                        <p class="mt-3 text-gray-700">
+                            A brief abstract or summary of the publication's key findings and contributions. This helps visitors quickly understand the essence of your work.
+                        </p>
+                        <a href="#" class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">Read Publication &rarr;</a>
+                    </div>
+                    <!-- Publication 2 -->
+                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-900">A Study on Advanced Theoretical Concepts</h3>
+                        <p class="text-gray-600 mt-1"><strong>Your Name</strong>, Another Author</p>
+                        <p class="text-blue-600 mt-2 font-medium">Proceedings of the International Conference on Important Stuff (ICIS), 2022</p>
+                        <p class="mt-3 text-gray-700">
+                           This paper explores novel methods in a specific field, presenting results that challenge existing paradigms. It was presented at a prestigious conference.
+                        </p>
+                        <a href="#" class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">View Proceedings &rarr;</a>
+                    </div>
                 </div>
             </div>
 
@@ -166,37 +187,63 @@
                     </div>
                  </div>
             </div>
+            
+            <!-- Teaching Content -->
+            <div id="teaching" class="tab-content hidden">
+                <div class="space-y-12">
+                    <section>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-blue-500 pl-4">Teaching Portfolio</h2>
+                        <p class="mb-8 text-gray-600">
+                            I am passionate about fostering an inclusive and engaging learning environment. Below is a selection of courses I have taught.
+                        </p>
+                        <!-- Course List -->
+                        <div class="space-y-8">
+                            <!-- Course 1 -->
+                            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-gray-900">CS 101: Introduction to Computer Science</h3>
+                                        <p class="text-blue-600 mt-1 font-medium">University of Excellence | Instructor of Record</p>
+                                    </div>
+                                    <span class="text-gray-500 font-medium whitespace-nowrap mt-2 sm:mt-0">Fall 2023</span>
+                                </div>
+                                <p class="mt-3 text-gray-700">
+                                    A foundational course covering core concepts of programming, algorithms, and data structures. Responsible for all lectures, curriculum design, and grading for a class of 80 undergraduate students.
+                                </p>
+                                <a href="#" class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">View Syllabus &rarr;</a>
+                            </div>
+                            <!-- Course 2 -->
+                            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-gray-900">STAT 450: Advanced Statistical Methods</h3>
+                                        <p class="text-blue-600 mt-1 font-medium">University of Excellence | Teaching Assistant</p>
+                                    </div>
+                                    <span class="text-gray-500 font-medium whitespace-nowrap mt-2 sm:mt-0">Spring 2022</span>
+                                </div>
+                                <p class="mt-3 text-gray-700">
+                                   Assisted the primary instructor by leading weekly lab sessions, holding office hours, and grading assignments for a graduate-level statistics course.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
 
-            <!-- Publications Content -->
-            <div id="publications" class="tab-content hidden">
-                <div class="space-y-8">
-                    <!-- Publication 1 -->
-                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                        <h3 class="text-xl font-semibold text-gray-900">Title of the Groundbreaking Publication</h3>
-                        <p class="text-gray-600 mt-1"><strong>Your Name</strong>, Co-author Name, Another Co-author</p>
-                        <p class="text-blue-600 mt-2 font-medium">Journal of Fictional Science, Vol. 42, 2023</p>
-                        <p class="mt-3 text-gray-700">
-                            A brief abstract or summary of the publication's key findings and contributions. This helps visitors quickly understand the essence of your work.
-                        </p>
-                        <a href="#" class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">Read Publication &rarr;</a>
-                    </div>
-                    <!-- Publication 2 -->
-                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                        <h3 class="text-xl font-semibold text-gray-900">A Study on Advanced Theoretical Concepts</h3>
-                        <p class="text-gray-600 mt-1"><strong>Your Name</strong>, Another Author</p>
-                        <p class="text-blue-600 mt-2 font-medium">Proceedings of the International Conference on Important Stuff (ICIS), 2022</p>
-                        <p class="mt-3 text-gray-700">
-                           This paper explores novel methods in a specific field, presenting results that challenge existing paradigms. It was presented at a prestigious conference.
-                        </p>
-                        <a href="#" class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">View Proceedings &rarr;</a>
-                    </div>
+                    <section>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-blue-500 pl-4">Teaching Philosophy</h2>
+                        <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                            <p class="text-gray-700 leading-relaxed">
+                                My teaching philosophy is centered on active learning and critical thinking. I strive to create a classroom where students are empowered to ask questions, challenge assumptions, and connect theoretical concepts to real-world applications. I believe in using a variety of pedagogical techniques, including project-based learning and collaborative problem-solving, to cater to diverse learning styles.
+                            </p>
+                        </div>
+                    </section>
                 </div>
             </div>
+
         </main>
         
         <!-- Footer -->
         <footer class="text-center mt-20 text-gray-500">
-            <p>&copy; 2024 Dr. Your Name. All Rights Reserved.</p>
+            <p>&copy; 2025 Vincent Chung. All Rights Reserved.</p>
         </footer>
 
     </div>
@@ -233,5 +280,4 @@
     </script>
 
 </body>
-
 </html>
