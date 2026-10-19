@@ -27,6 +27,22 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Lora', serif;
         }
+
+        /* Click-to-expand abstracts */
+        summary.abstract-toggle {
+            list-style: none;
+            cursor: pointer;
+        }
+        summary.abstract-toggle::-webkit-details-marker {
+            display: none;
+        }
+        .abstract-chevron {
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+        details[open] .abstract-chevron {
+            transform: rotate(90deg);
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
@@ -228,7 +244,11 @@
                                 <h3 class="text-xl font-semibold text-gray-900">Seeing Is Believing, but Believing Is Not Paying More: A Field Experiment on Virtual Reality and Coral Reef Valuation</h3>
                                 <p class="text-gray-600 mt-1"><strong>Vincent Chung</strong>, Chiara Sotis, Giles Atkinson, Thomas Smith</p>
                                 <p class="text-blue-600 mt-2 font-medium">Job Market Paper</p>
-                                <p class="mt-3 text-gray-700">A large field experiment in Brisbane examines whether immersive virtual reality changes environmental valuation and conservation responses by reducing psychological distance to Great Barrier Reef degradation.</p>
+                                <p class="mt-4 text-xs font-semibold uppercase tracking-wide text-gray-500">Abstract</p>
+                                <p class="mt-1 text-gray-700 leading-relaxed">Stated-preference valuation often requires respondents to evaluate environmental goods using information provided within the survey, yet evidence remains limited on whether immersive representation alters resulting valuations. We conducted the largest field experiment to date integrating immersive virtual reality (VR) with environmental stated-preference valuation, randomly assigning 837 participants in Brisbane, Australia, to experience Great Barrier Reef degradation through immersive VR or a text-and-image presentation. VR increased spatial presence and reduced psychological distance to reef degradation. However, we found no statistically robust effects on hypothetical willingness to pay, actual donations or immediate behavioural outcomes after adjustment for multiple testing. Mediation analysis was consistent with positive indirect effects through reduced psychological distance on behavioural intentions, support for conservation funding and newsletter subscription, although these estimates rely on sequential ignorability and were sensitive to modest violations of that assumption. Among a smaller, self-selected follow-up sample, exploratory analyses suggested greater baseline-to-follow-up reductions in psychological distance, stronger behavioural intentions at one month, and more conservation actions reported since the experiment. Overall, immersive representation changed how environmental degradation was psychologically experienced without systematically increasing elicited monetary values, suggesting that immersive formats may provide a richer basis for preference formation without mechanically raising stated valuations.</p>
+                                <div class="mt-4 flex flex-wrap gap-5">
+                                    <a href="/Vincent_Chung_JMP.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">PDF &rarr;</a>
+                                </div>
                             </div>
 
                             <!-- Amazon working paper -->
@@ -236,11 +256,16 @@
                                 <h3 class="text-xl font-semibold text-gray-900">Stated Preference Validity in the Age of Immersive Media: Evidence on Scope Sensitivity and Hypothetical Bias</h3>
                                 <p class="text-gray-600 mt-1"><strong>Vincent Chung</strong>, Giles Atkinson, Thomas Smith</p>
                                 <p class="text-blue-600 mt-2 font-medium">Working Paper</p>
-                                <p class="mt-3 text-gray-700">Using a preregistered 2×2 experiment (N=246), this study tests whether immersive virtual reality improves two central dimensions of stated-preference validity. Both VR and high-quality video generated scope-sensitive valuations, while neither reduced hypothetical bias.</p>
                                 <div class="mt-4 flex flex-wrap gap-5">
-                                    <a href="/Stated%20Preference%20Validity%20in%20the%20Age%20of%20Immersive%20Media.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">Working Paper &rarr;</a>
+                                    <a href="/Stated%20Preference%20Validity%20in%20the%20Age%20of%20Immersive%20Media.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">PDF &rarr;</a>
                                     <a href="/Online%20Appendix.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">Online Appendix &rarr;</a>
                                 </div>
+                                <details class="mt-4">
+                                    <summary class="abstract-toggle inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                                        <span class="abstract-chevron mr-1.5">&#9656;</span>Abstract
+                                    </summary>
+                                    <p class="mt-3 text-gray-700 text-sm leading-relaxed">Immersive virtual reality (VR) has been proposed as a way to help respondents value unfamiliar environmental goods, yet its effects on stated preference validity remain largely untested. Using a preregistered 2×2 experiment (N=246), we compare fully immersive, multisensory VR with high-quality video for Amazon rainforest conservation under real and hypothetical donations, among the first contingent valuation applications of fully immersive VR. Both formats produced scope-sensitive valuations with comparable elasticities. Neither format reduced hypothetical bias, with hypothetical willingness to pay (WTP) approximately five times higher than real donations. Exploratory within-VR analyses show that perceived realism and emotional engagement were associated with higher hypothetical WTP while real donations remained stable, whereas presence was associated with stronger scope sensitivity without increasing hypothetical bias. These findings suggest that immersive technologies reshape stated preference validity profiles rather than uniformly improving valuation quality, and that high-quality video may provide a lower-cost alternative for environmental valuation applications.</p>
+                                </details>
                             </div>
 
                             <!-- ECO-CHICA -->
@@ -248,8 +273,17 @@
                                 <h3 class="text-xl font-semibold text-gray-900">Consensus Guidelines for the ECOnomiC Evaluation of the Health Impacts of Climate Action (ECO-CHICA): An Explanatory Overview</h3>
                                 <p class="text-gray-600 mt-1">ECO-CHICA Collaborative Group (including <strong>Vincent Chung</strong>)</p>
                                 <p class="text-blue-600 mt-2 font-medium">Under review at <i>The Lancet Planetary Health</i></p>
-                                <p class="mt-3 text-gray-700">Consensus guidance for the economic evaluation of the health impacts of climate action.</p>
-                                <a href="https://doi.org/10.2139/ssrn.6983238" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">Working Paper &rarr;</a>
+                                <a href="https://doi.org/10.2139/ssrn.6983238" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">SSRN Preprint &rarr;</a>
+                                <details class="mt-4">
+                                    <summary class="abstract-toggle inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                                        <span class="abstract-chevron mr-1.5">&#9656;</span>Abstract
+                                    </summary>
+                                    <div class="mt-3 space-y-3 text-gray-700 text-sm leading-relaxed">
+                                        <p>Climate action – encompassing both mitigation (reducing greenhouse gas emissions) and adaptation (adjusting to the effects of climate change) – can generate substantial health benefits. However, these benefits are rarely captured systematically in economic evaluations of climate policies. A key reason is that health economics and climate/environmental economics have developed different frameworks for measuring and valuing health. Health economists typically use quality- or disability-adjusted life years (QALYs or DALYs) alongside cost-effectiveness thresholds, whilst environmental and transport economists use willingness-to-pay approaches expressed as a value per statistical life (VSL). Without coherent guidance on how to navigate these differences, analysts face fragmented, discipline-specific approaches that make it difficult to compare options or aggregate evidence.</p>
+                                        <p>The ECO-CHICA project used a multi-method consensus development process to produce guidance on valuing and reporting the health impacts of climate actions. We conducted targeted scoping reviews and five focused “deep dive” reviews in priority methodological areas; mapped and engaged diverse stakeholders across health, environmental, climate, and transport economics; and ran a three-round modified Delphi process with a panel of practising economists. Of 84 participants invited to form the Delphi panel, 46 completed all qualifying rounds. Findings were refined through a multi-stakeholder consensus workshop. The process yielded 11 guidance statements across two domains: the measurement and valuation of health impacts (Statements 1F–5), and related methods for economic evaluation (Statements 6F–11). Two foundational statements (1F and 6F) establish overarching principles for each domain. The guidance covers mortality and morbidity valuation, the role of the social cost of carbon, discounting, equity, uncertainty, and environmental spillovers.</p>
+                                        <p>ECO-CHICA provides the first consensus-based methodological framework for valuing the health impacts of climate actions. It is aimed at analysts, commissioners, and policymakers working at the intersection of health and climate – whether in health systems, government agencies, transport planning, or finance ministries. Rather than mandating a single approach, the guidance acknowledges the legitimacy of different valuation traditions and provides a structured framework for making and documenting those choices. Analysts are encouraged to engage with the foundational statements first and to report transparently about the methodological choices they make.</p>
+                                    </div>
+                                </details>
                             </div>
 
                             <!-- IQ losses -->
@@ -257,6 +291,12 @@
                                 <h3 class="text-xl font-semibold text-gray-900">Valuing the Avoidance of IQ Losses in Children: A Large-Scale Multi-Country Stated Preference Approach</h3>
                                 <p class="text-gray-600 mt-1">Chiara Sotis, Davide Contu, Giles Atkinson, Damien Dussaux, Stavros Georgiou, Susana Mourato, <strong>Vincent Chung</strong></p>
                                 <p class="text-blue-600 mt-2 font-medium">Working Paper</p>
+                                <details class="mt-4">
+                                    <summary class="abstract-toggle inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                                        <span class="abstract-chevron mr-1.5">&#9656;</span>Abstract
+                                    </summary>
+                                    <p class="mt-3 text-gray-700 text-sm leading-relaxed">Most regulatory frameworks require cost-benefit analyses to justify restrictions on harmful chemicals. Yet valuation studies on the non-fatal health impacts of these substances remain geographically scattered and insufficient to offer robust policy guidance. We contribute to filling this gap by eliciting the Willingness-to-Pay (WTP) to avoid IQ losses in children due to chemical exposure across eleven OECD countries (N=13,200), as part of the OECD SWACHE project. We use a double-bounded contingent valuation approach leveraging the link between a child’s IQ and their educational outcomes — standardized exam performance and dropout rates in mandatory school — to allow respondents to value measurable consequences of cognitive losses. Our design accounts for the non-linear relationship between IQ and educational attainment, with the same absolute IQ loss leading to larger changes in exam performance and dropout rates at lower starting levels. We test for scope sensitivity by varying the IQ loss (1 versus 5 IQ points) and initial IQ level, mapping each baseline to the implied changes in educational outcomes. We find a pooled mean annual WTP of USD2022 PPP 609 per IQ point, with country-specific values ranging from 327 (United Kingdom) to 935 (Poland). Respondents facing the same absolute IQ loss state higher WTP per IQ point when the implied educational consequences are more severe, suggesting they value the consequences of IQ losses rather than IQ points per se. We provide country-specific values and a flexible benefit transfer formula that can accommodate changes in income growth, prices, and scientific evidence on the IQ–education relationship.</p>
+                                </details>
                             </div>
 
                             <!-- OECD publication -->
@@ -264,8 +304,13 @@
                                 <h3 class="text-xl font-semibold text-gray-900">Valuing a Reduction in the Risk of Skin Sensitisation: A Large-Scale Multi-Country Stated Preference Approach</h3>
                                 <p class="text-gray-600 mt-1">Davide Contu, Chiara Sotis, Giles Atkinson, <strong>Vincent Chung</strong>, Stavros Georgiou, Damien Dussaux, Susana Mourato, I. Hu</p>
                                 <p class="text-blue-600 mt-2 font-medium">OECD Environment Working Papers, No. 277 (2026)</p>
-                                <p class="mt-3 text-gray-700">Large-scale multi-country stated-preference evidence on willingness to pay to reduce health risks from skin sensitisation.</p>
                                 <a href="https://doi.org/10.1787/fc305de9-en" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">Read publication &rarr;</a>
+                                <details class="mt-4">
+                                    <summary class="abstract-toggle inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                                        <span class="abstract-chevron mr-1.5">&#9656;</span>Abstract
+                                    </summary>
+                                    <p class="mt-3 text-gray-700 text-sm leading-relaxed">Exposure to chemicals has been shown to cause skin sensitisation, leading to chronic conditions such as allergic contact dermatitis. Beyond physical symptoms, skin sensitisation can also reduce one’s quality of life, impair productivity and cause psychological distress. Despite its prevalence, information on the value that the public places on avoiding chemical-induced skin sensitisation remains limited. To fill this gap, the present paper details a stated preference survey estimating individuals’ willingness-to-pay to avoid the frequency, severity and visibility of skin flare-ups in nine countries (Canada, Denmark, Japan, the Netherlands, Poland, Spain, Switzerland, the United Kingdom and the United States). It also explores how other socio-economic factors such as age, gender and income affect the valuation of skin sensitisation. This work is part of a series of large-scale studies resulting from the Surveys on Willingness-to-Pay to Avoid Negative Chemicals-Related Health Effects project that intends to establish internationally comparable values for the willingness-to-pay to avoid negative health effects due to exposure to chemicals. The results from this paper are expected to be widely applicable in analyses assessing the value of reduced skin sensitisation in a range of chemical and environmental contexts.</p>
+                                </details>
                             </div>
 
                             <!-- Octocrilene -->
@@ -273,11 +318,16 @@
                                 <h3 class="text-xl font-semibold text-gray-900">Willingness-to-Pay to Ban Octocrilene</h3>
                                 <p class="text-gray-600 mt-1">Chiara Sotis, Davide Contu, <strong>Vincent Chung</strong>, Giles Atkinson, Susana Mourato</p>
                                 <p class="text-blue-600 mt-2 font-medium">Working Paper</p>
-                                <p class="mt-3 text-gray-700">This study estimates willingness to pay for restricting the use of octocrilene in cosmetic products across Europe. The valuation work contributed to the economic assessment underpinning the proposed restriction under EU REACH.</p>
                                 <div class="mt-4 flex flex-wrap gap-5">
                                     <a href="/Main_Paper_Octocrylene.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">ANSES Annex XV Report &rarr;</a>
                                     <a href="/Main_Appendix_Octocrylene.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">Technical Appendix &rarr;</a>
                                 </div>
+                                <details class="mt-4">
+                                    <summary class="abstract-toggle inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                                        <span class="abstract-chevron mr-1.5">&#9656;</span>Abstract
+                                    </summary>
+                                    <p class="mt-3 text-gray-700 text-sm leading-relaxed">Octocrilene is a widely used UV filter in sunscreens and other cosmetics. It is persistent and toxic to aquatic invertebrates, and ANSES has proposed restricting it under EU REACH. To value the ecological benefits of such a restriction, we conducted a stated preference survey combining a discrete choice experiment (DCE) and contingent valuation (CV) with representative samples of 7,200 adults in six EEA countries (Bulgaria, France, Germany, Hungary, Spain and Sweden; 1,200 per country). Respondents valued improvements in the state of freshwater and coastal ecosystems, described as the recovery of invertebrate and fish species. They paid through higher prices for octocrilene-free cosmetics over five years. Mean CV willingness to pay averaged €57, €71 and €75 per household per year (PPP) for low, medium and high improvement. DCE estimates were considerably higher (€74 in Hungary to €503 in Sweden per level of improvement), consistent with the CV being the more conservative format. Transferring the CV values to 203 million EEA households gives aggregate benefits of €24–49 billion (present value), against estimated restriction costs of about €354 million. Benefits exceed costs even if households were willing to pay only €0.37 per year. The valuation informed the ANSES Annex XV restriction proposal.</p>
+                                </details>
                             </div>
                         </div>
                     </section>
